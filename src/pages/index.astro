@@ -1,4 +1,6 @@
 ---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 const pageTitle = "ホーム";
 ---
@@ -13,9 +15,8 @@ const pageTitle = "ホーム";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-    <a href="/">ホーム</a><br />
-    <a href="/about">私について</a><br />
-    <a href="/blog">ブログ</a>
+    <Header />
 		<h1>{pageTitle}</h1>
+    <Footer />
 	</body>
 </html>
